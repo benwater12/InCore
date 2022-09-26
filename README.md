@@ -6,7 +6,7 @@
 * 資料庫有分成兩個部分，一個是SQLdata，另一個是file system
   * SQL是指標資料，指向file system的資料，方便查找
   * ```InCore/models```會儲存訓練模型
-  * ```InCore/db````會儲存訓練用資料
+  * ```InCore/db```會儲存訓練用資料
   * file system 是用來儲存實際的資料，會儲存在```InCore/db 和 InCore/models  ```中，這些要進行手動刪除。
   * **記得對SQLdata中的InCore和inanalysis資料刪除後，file system的資料一定要清理，否則這些資料會變成dead weight，而且日後不好分辨**
 * 演算法儲存的位置在 ```/src/service/analyticService/core/analyticCore/*```的資料夾中，可以刪除的部分資料需要py和json檔案一並刪除，系統檔案型態必須要留下來，**千萬不要刪掉開頭是in開頭的py檔案和json，那些是是內建的演算法**。
