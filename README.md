@@ -13,4 +13,4 @@
 
 | 名稱      | 目的      | 功能     |
 | -------- | -------- | -------- |
-|analyticModuleUploadDeadline|上傳演算法期限|超過這個日期，所有人就無法上船演算法|
+|analyticModuleUploadDeadline|上傳演算法期限|超過這個日期，所有人就無法上傳演算法|
