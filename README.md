@@ -1,5 +1,16 @@
-InCore
-===
-[Ops Documents](https://hackmd.io/@cilegann/incoreapi)
+# InCore 使用說明
+## 啟動方式
+1. 在Incore的根目錄，使用python 3.6，啟動src中的apps.py檔案
+2. 指令 ```python3.6 ./src/apps.py```
+## 資料庫位置
+* 資料庫有分成兩個部分，一個是SQLdata，另一個是file system
+  * SQL是指標資料，指向file system的資料，方便查找
+  * file system 是用來儲存實際的資料，但是file system的部分會放在inanalysisbackend，**記得對SQLdata中的InCore資料刪除後，inanalysisbackend的資料一定要清理!**
+* 演算法儲存的位置在 ```/src/service/analyticService/core/analyticCore/*```的資料夾中，可以刪除的部分資料需要py和json檔案一並刪除，系統檔案型態必須要留下來，**千萬不要刪掉開頭是in開頭的py檔案和json，那些是是內建的演算法**。
 
-Dev Documents is still building
+## 重要參數
+* 在 ```InCore/serverStatus.cfg ```
+
+| 名稱      | 目的      | 功能     |
+| -------- | -------- | -------- |
+|analyticModuleUploadDeadline|上傳演算法期限|超過這個日期，所有人就無法上船演算法|
