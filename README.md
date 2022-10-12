@@ -19,7 +19,7 @@
 |analyticModuleUploadDeadline|上傳演算法期限|超過這個日期，所有人就無法上傳演算法|
 ## 上傳網址生成
 * 在incore的目錄中，建立成一個名為allowSubmit.csv的檔案，之後以這樣的形式格式生成。
-
+* 這個CSV不需要開頭，直接打內容。
 | 學員學號      | ID       | 
 | -------- | -------- | 
 |學員名稱|非重複的id，建議使用 學生學號+unixtime的 hash值|
